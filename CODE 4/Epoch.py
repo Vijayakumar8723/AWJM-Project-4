@@ -15,7 +15,7 @@ surface_data = {
                  4.55, 5.29, 3.36, 4.44, 4.56, 5.20, 3.86]
 }
 
-mrr_data = {
+mer_data = {
     'Exp.value': [119.98, 126.36, 122.4, 111.57, 126.63, 97.63, 121.6, 109.81, 137.08, 117.28,
                   143.3, 125.7, 106.95, 148.41, 102.02, 115.2, 122.4, 119.69, 145.92, 131.74,
                   132.71, 99.7, 140.98, 122.4, 104.26, 103.66, 139.85],
@@ -36,9 +36,9 @@ kerf_data = {
 
 
 datasets = {
-    "Surface Roughness": surface_data,
-    "Material Removal Rate": mrr_data,
-    "Kerf Angle": kerf_data
+    "Surface Waviness": surface_data,
+    "Material Erosion Rate": mer_data,
+    "Kerf Gap": kerf_data
 }
 
 # ===== 2. Dummy feature (sequence index) =====
