@@ -35,7 +35,7 @@ surface_data = {
 
 }
 
-mrr_data = {
+mer_data = {
     "Exp.value": [119.98,126.36,122.40,111.57,126.63,97.63,121.60,109.81,137.08,117.28,
                   143.30,125.70,106.95,148.41,102.02,115.20,122.40,119.69,145.92,131.74,
                   132.71,99.70,140.98,122.40,104.26,103.66,139.85],
@@ -144,6 +144,6 @@ def plot_learning_curve(data, title, ylabel):
     plt.show()
 
 # Run for all datasets
-plot_learning_curve(surface_data, "Surface Roughness", "Mean Squared Error")
-plot_learning_curve(mrr_data, "Material Removal Rate", "Mean Squared Error")
-plot_learning_curve(kerf_data, "Kerf Angle", "Mean Squared Error")
+plot_learning_curve(surface_data, "Surface Waviness", "Mean Squared Error")
+plot_learning_curve(mer_data, "Material Erosion Rate", "Mean Squared Error")
+plot_learning_curve(kerf_data, "Kerf Gap", "Mean Squared Error")
