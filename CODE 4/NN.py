@@ -78,7 +78,7 @@ colors = {
 
 }
 # Hidden layer neurons updated
-layers_sr = {
+layers_sw = {
     "Input": ["Pressure", "Standoff\nDistance", "Traverse\nSpeed", "MassFlow\n Rate"],
     "Hidden Layer 1": [f"H1_{i+1}" for i in range(5)],
     "Hidden Layer 2": [f"H2_{i+1}" for i in range(3)],
@@ -86,7 +86,7 @@ layers_sr = {
     "Output": ["Surface\nWaviness"]
 }
 
-layers_mrr = {
+layers_mer = {
     "Input": ["Pressure", "Standoff\nDistance", "Traverse\nSpeed", "MassFlow\n Rate"],
     "Hidden Layer 1": [f"H1_{i+1}" for i in range(6)],
     "Hidden Layer 2": [f"H2_{i+1}" for i in range(4)],
