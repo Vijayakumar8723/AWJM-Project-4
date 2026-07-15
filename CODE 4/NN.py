@@ -83,7 +83,7 @@ layers_sr = {
     "Hidden Layer 1": [f"H1_{i+1}" for i in range(5)],
     "Hidden Layer 2": [f"H2_{i+1}" for i in range(3)],
     "Hidden Layer 3": [f"H3_{i+1}" for i in range(2)],
-    "Output": ["Surface\nRoughness"]
+    "Output": ["Surface\nWaviness"]
 }
 
 layers_mrr = {
@@ -91,7 +91,7 @@ layers_mrr = {
     "Hidden Layer 1": [f"H1_{i+1}" for i in range(6)],
     "Hidden Layer 2": [f"H2_{i+1}" for i in range(4)],
     "Hidden Layer 3": [f"H3_{i+1}" for i in range(2)],
-    "Output": ["MRR"]
+    "Output": ["MER"]
 }
 
 layers_kerf = {
@@ -99,10 +99,10 @@ layers_kerf = {
     "Hidden Layer 1": [f"H1_{i+1}" for i in range(5)],
     "Hidden Layer 2": [f"H2_{i+1}" for i in range(4)],
     "Hidden Layer 3": [f"H3_{i+1}" for i in range(2)],
-    "Output": ["Kerf\nAngle"]
+    "Output": ["Kerf\nGap"]
 }
 
 # Use your original draw_network function
-draw_network(layers_sr, colors, "Neural Network Architecture: Surface Roughness")
-draw_network(layers_mrr, colors, "Neural Network Architecture: Material Removal Rate")
-draw_network(layers_kerf, colors, "Neural Network Architecture: Kerf Angle")
+draw_network(layers_sr, colors, "Neural Network Architecture: Surface Waviness")
+draw_network(layers_mrr, colors, "Neural Network Architecture: Material Erosion Rate")
+draw_network(layers_kerf, colors, "Neural Network Architecture: Kerf Gap")
